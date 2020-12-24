@@ -136,18 +136,7 @@ export default class UserProfile extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-12">
-                            <div className="group">
-                                <input 
-                                type="number" name="phone" onChange={this.handleChangeValue} />
-                                <span className="highlight" />
-                                <span className="bar" />
-                                <label>Phone</label>
-                               
-                            </div>
-                        </div>
-                    </div>
+                  
                    
                     <div className="row">
                         <div className="col-6">
