@@ -26,7 +26,8 @@ export default class UserProfile extends Component {
     handleChangeValue = (event) => {
         let { name, value, type } = event.target;
         let newValues = {...this.state.values, [name]: value}; 
-        let newErrors = {...this.state.errors}; 
+        let newErrors = {...this.state.errors};
+        //kiểm tra validate form 
         if(value.trim() === ""){
             newErrors[name] = name + " is required !"
         }
@@ -135,6 +136,8 @@ export default class UserProfile extends Component {
                             </div>
                         </div>
                     </div>
+                  
+                   
                     <div className="row">
                         <div className="col-6">
                             <div className="group">
